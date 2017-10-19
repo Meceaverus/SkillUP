@@ -1,0 +1,11 @@
+.product{
+    height: 200px;
+}
+
+.product img{
+    max-height: 170px;
+}
+
+.price{
+    padding: 6px;
+}
