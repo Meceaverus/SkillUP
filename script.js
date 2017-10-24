@@ -18,3 +18,4 @@ function onClick(event) {
 for (i = 0; i < buttons.length; i++) {
     buttons[i].onclick = onClick;
 }
+//fef
