@@ -34,7 +34,11 @@ var str2 = 'Богдан';
 alert ( str1 + str2 ); // Задача 7
 
 var str = 'Привет,';
-var admin, name;
+var name;
 name = 'Богдан';
-admin = name;
-alert ( str + admin ); // Задача 8
+alert ( str + name ); // Задача 8
+
+var age = '25';
+var str = 'Мне ';
+var str1 = ' лет!';
+alert(str+age+str1); // Задача 9
