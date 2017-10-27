@@ -40,3 +40,13 @@ for (i=1; i <= 9; i++){
     arr.push(arrayFill(i, i));
 }
     console.log(arr); //Задача 2
+
+var arr = [3, 1, 2, 6, 9, 3, 4, 5],
+sum = 0;
+for ( i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    if (sum > 10){
+        break;
+    }
+    }
+console.log(arr);//Задача 4
