@@ -59,3 +59,23 @@ for (var i = arr.length - 1; i >= 0; i--) {
 }
 
 console.log(result);//Задача 5
+
+var arr = [[1, 2, 3], [4, 5], [6]],
+    sum = 0;
+for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++){
+    result.push(arr[i][j]);
+    }
+}
+console.log(result);//Задача 6
+
+var arr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+var sum = 0;
+for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+        for (var k = 0; k < arr[i][j].length; k++) {
+            result.push(arr[i][j][k]);
+        }
+    }
+}
+alert(sum);//Задача 7
