@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .expand {
+            display: none;
+        }
+
+        .active .slide {
+            display: none;
+        }
+
+        .active .expand {
+            display: inline;
+        }
+    </style>
 </head>
 <body>
-!Welcome!
-I'm the 1st lesson.
+<input type="number" id="op1" placeholder="Operand 1" value="0">
+<input type="number" id="op2" placeholder="Operand 2" value="0">
+<button id="plus">+</button>
+<button id="minus">-</button>
+<button id="multily">*</button>
+<button id="divide">/</button>
+<span id="result">0</span>
+
+<div id="panel" style="height: 300px; background-color: green"></div>
+<button id="slide">
+    <span class="slide">Свернуть</span>
+    <span class="expand">Развернуть</span>
+</button>
+
+<button id="hide">
+    <span class="slide">Расстворить</span>
+    <span class="expand">Показать</span>
+</button>
+
+<a id="load" href="content.html" target="#panel">Загрузить</a>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="scripts.js"></script>
+
 </body>
 </html>
