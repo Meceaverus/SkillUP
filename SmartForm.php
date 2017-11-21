@@ -3,7 +3,7 @@ require_once "Form.php";
 
 class SmartForm extends Form
 {
-    protected function attr2html(array $attr)
+    protected function prepareAttr(array $attr)
     {
         if ( isset($attr['name'])
             && !isset($attr['value'])
@@ -12,7 +12,7 @@ class SmartForm extends Form
             $attr['value'] = $_REQUEST[$attr['name']];
         }
 
-        return parent::attr2html($attr);
+        return parent::prepareAttr($attr);
     }
 
 }

@@ -11,7 +11,7 @@ class Form
 
     public function input(array $attr)
     {
-        return '<input ' .$this->attr2html($attr) . '>';
+        return '<input ' .$this->prepareAttr($attr) . '>';
     }
     public function submit(array $attr)
     {
@@ -25,8 +25,14 @@ class Form
     }
     public function textarea(array $attr)
     {
-        $value = $attr['value'];
-        unset($attr['value']);
+        if ( isset($attr['value'])){
+            $value = htmlspecialchars(($attr['value']));
+            unset($attr['value']);
+        } else {
+            $value = '';
+        }
+
+
 
         return '<textarea' . $this->attr2html($attr) . '>' . $value . '</textarea>';
     }
