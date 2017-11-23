@@ -225,4 +225,4 @@ $driver->setDrivingCategory('A') ;
 
 echo "Задача 6." . PHP_EOL;
 echo "Водительский стаж - " . $driver->getDrivingExperiense() . " лет.". PHP_EOL;
-echo "Категория вождения - " . $driver->getDrivingCategory() . PHP_EOL;//Задача №6
+echo "Категория вождения - " . $driver->getDrivingCategory() . PHP_EOL; //Задача №6
