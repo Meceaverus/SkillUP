@@ -1,6 +1,7 @@
 <?php
 
 include 'worker.php';
+
 $pdo = new PDO('mysql:host=localhost;dbname=skillup;charset=utf8','root','');
 
 //* 23. Поставьте Васе зарплату в 200$
